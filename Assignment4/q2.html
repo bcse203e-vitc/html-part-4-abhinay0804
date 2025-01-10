@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body{
+            background-color: rgb(214, 243, 233);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">THE CTF WORLD!!</h1>
+    <table>
+        <label for="name">Full Name &ensp; &ensp; &ensp; &ensp;&ensp;&ensp; : &ensp; &ensp; &ensp;</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <p>&ensp;</p>
+        <label for="email">Email &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; :&ensp;&ensp; &ensp; </label>
+        <input type="email" id="email" name="mail" required>
+        <br>
+        <p>&ensp;</p>
+        <label for="num">Mobile Number &ensp; &ensp; &ensp;:&ensp;&ensp;&ensp;&ensp;</label>
+        <input type="number" id="num" name="number" required>
+        <br><p>&ensp;</p>
+        <label for="gender">Gender &ensp;&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;:&ensp;&ensp;&ensp;&ensp;</label>
+        <input type="radio">Male
+        <input type="radio">Female
+        <input type="radio">Others
+        <br><p>&ensp;</p>
+        <label for="age">Age &ensp; &ensp; &ensp; &ensp;&ensp; &ensp;&ensp;&ensp;&ensp;&ensp; &ensp;: &ensp;&ensp;&ensp;&ensp;</label>
+        <select id="age" name="age">
+            <option value="16-20" style="background-color: rgb(208, 227, 243);">16-20</option>
+            <option value="21-25" style="background-color: rgb(204, 179, 200);">21-25</option>
+            <option value="26-30" style="background-color: rgb(136, 112, 112);">26-30</option>
+            <option value="30+" style="background-color: rgb(241, 240, 187);">30+</option>
+        </select>
+        <br>
+        <p>&ensp;</p>
+        <label for="Topics">Topics of Interest  &ensp;  &ensp; : &ensp; &ensp; &ensp;</label>
+        <input type="checkbox" id="topics" name="topics"> Web
+        <input type="checkbox" id="topics" name="topics"> Android
+        <input type="checkbox" id="topics" name="topics"> GraphQL
+        <input type="checkbox" id="topics" name="topics"> Crypto<br>
+        <p>&ensp;</p>
+        <br>
+        <textarea id="cmnts" name="Comments" rows="10" cols="100" placeholder="Provide us with your insights if any.........."></textarea>
+        <input type="submit" name="cmnts">
+    </table>
+</body>
+</html>

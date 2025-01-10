@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Order Form</title>
+    <style>
+        body{
+            background-color: rgb(214, 243, 233);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Product Order Form</h1>
+    <table>
+        <label for="name">Customer Name &ensp; &ensp; &ensp; &ensp; &ensp; : &ensp; &ensp; </label>
+        <input type="text" id="name" name="name" required><br>
+        <p>&ensp;</p>
+        <label for="email">Email &ensp;&ensp;&ensp;&ensp;&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; : &ensp; </label>
+        <input type="email" id="email" name="email" required><br>
+        <p>&ensp;</p>
+        <label for="address">Address &ensp;&ensp;&ensp;&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;: &ensp;</label>
+        <input type="text" id="address" name="address" required><br>
+        <p>&ensp;</p>
+        <label for="product">Product &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;: &ensp;</label>
+        <select id="product" name="product">
+            <option value="product1">Product 1</option>
+            <option value="product2">Product 2</option>
+            <option value="product3">Product 3</option>
+        </select><br>
+        <p>&ensp;</p>
+        <label for="quantity">Quantity &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &ensp; &ensp; &ensp; &ensp; &ensp;: &ensp;</label>
+        <input type="number" id="quantity" name="quantity" required><br>
+        <p>&ensp;</p>
+        <label for="delivery">Delivery Preferences &ensp;&ensp; &ensp; &ensp;: &ensp;</label>
+        <input type="radio" name="delivery" value="standard">Standard
+        <input type="radio" name="delivery" value="express">Express<br>
+        <p>&ensp;</p>
+        <label for="coupon">Apply Coupon &ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &ensp;: &ensp;</label>
+        <input type="text" id="coupon" name="coupon"><br>
+        <p>&ensp;</p>
+        <input type="submit" value="Submit">
+    </table>
+</body>
+</html>

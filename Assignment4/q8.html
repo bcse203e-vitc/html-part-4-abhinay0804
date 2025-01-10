@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Quiz Submission Form</title>
+    <style>
+        body {
+            background-color: rgb(240, 248, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Cyber Quiz Submission Form</h1>
+    <table>
+        <label for="name">Full Name &ensp;&ensp;&ensp;&ensp;: &ensp; &ensp; </label>
+        <input type="text" id="name" name="name" required>
+        <br><p>&ensp;</p>
+        <label for="email">Email &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;: &ensp; &ensp; </label>
+        <input type="email" id="email" name="email" required>
+        <br><p>&ensp;</p>
+        <label for="questions">Questions : &ensp; &ensp; </label>
+        <br><p>&ensp;</p>
+        <label>1. What is the main goal of penetration testing?</label><br>
+        <input type="radio" name="question1" value="A"> A) To disrupt a system<br>
+        <input type="radio" name="question1" value="B"> B) To identify security vulnerabilities<br>
+        <input type="radio" name="question1" value="C"> C) To steal data<br>
+        <input type="radio" name="question1" value="D"> D) To remove malware<br>
+        <br><p>&ensp;</p>
+        <label>2. What does SSL stand for?</label><br>
+        <input type="radio" name="question2" value="A"> A) Secure Software Layer<br>
+        <input type="radio" name="question2" value="B"> B) Secure Sockets Layer<br>
+        <input type="radio" name="question2" value="C"> C) System Security Level<br>
+        <input type="radio" name="question2" value="D"> D) Software Secure Login<br>
+        <br><p>&ensp;</p>
+        <label>3. Which of the following is a type of phishing attack?</label><br>
+        <input type="radio" name="question3" value="A"> A) Spear Phishing<br>
+        <input type="radio" name="question3" value="B"> B) DoS Attack<br>
+        <input type="radio" name="question3" value="C"> C) SQL Injection<br>
+        <input type="radio" name="question3" value="D"> D) Cross-Site Scripting<br>
+        <br><p>&ensp;</p>
+        <input type="submit" value="Submit">
+        <br><p>&ensp;</p>
+        <label>Time Remaining: </label>
+        <input type="text" placeholder="00:10:00" disabled>
+    </table>
+</body>
+</html>

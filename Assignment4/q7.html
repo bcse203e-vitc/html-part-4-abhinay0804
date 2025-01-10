@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking Form</title>
+    <style>
+        body {
+            background-color: rgb(214, 243, 233);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Travel Booking Form</h1>
+    <table>
+        <label for="fullname">Full Name &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &ensp;&ensp;&ensp;&ensp;&ensp; : &ensp;</label>
+        <input type="text" id="fullname" name="fullname" required><br>
+        <p>&ensp;</p>
+        <label for="contact">Contact Information &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; : &ensp;</label>
+        <input type="tel" id="contact" name="contact" required><br>
+        <p>&ensp;</p>
+        <label for="destination">Destination &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; : &ensp;</label>
+        <select id="destination" name="destination">
+            <option value="paris">Paris</option>
+            <option value="newyork">New York</option>
+            <option value="tokyo">Tokyo</option>
+            <option value="sydney">Sydney</option>
+        </select><br>
+        <p>&ensp;</p>
+        <label for="travel_dates">Travel Dates &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; : &ensp;</label>
+        <input type="date" id="travel_dates" name="travel_dates" required><br>
+        <p>&ensp;</p>
+        <label for="num_travelers">Number of Travelers &ensp;&ensp;&ensp; : &ensp;</label>
+        <input type="number" id="num_travelers" name="num_travelers" required><br>
+        <p>&ensp;</p>
+        <label for="travel_class">Travel Class &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; : &ensp;</label>
+        <input type="radio" name="travel_class" value="economy">Economy
+        <input type="radio" name="travel_class" value="business">Business
+        <input type="radio" name="travel_class" value="firstclass">First Class<br>
+        <p>&ensp;</p>
+        <label for="insurance">Travel Insurance &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; : &ensp;</label>
+        <input type="checkbox" id="insurance" name="insurance" value="yes">Yes<br>
+        <p>&ensp;</p>
+        <label for="cost">Total Cost &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &ensp;&ensp; : &ensp;</label>
+        <input type="text" id="cost" name="cost" placeholder="Auto-calculated based on selection" readonly><br>
+        <p>&ensp;</p>
+        <input type="submit" value="Submit">
+    </table>
+</body>
+</html>
