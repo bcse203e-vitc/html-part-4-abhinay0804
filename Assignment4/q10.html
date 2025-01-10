@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customizable Form Template</title>
+    <style>
+        body {
+            background-color: rgb(240, 255, 240);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Customizable Form Template</h1>
+    <table>
+        <label for="formName">Form Name &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;: &ensp; &ensp; </label>
+        <input type="text" id="formName" name="formName" required>
+        <br><p>&ensp;</p>
+        <label for="numFields">Number of Input Fields &ensp;&ensp;: &ensp; &ensp; </label>
+        <input type="number" id="numFields" name="numFields" required>
+        <br><p>&ensp;</p>
+        <label for="fieldType">Field Types &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;: &ensp; &ensp; </label>
+        <select id="fieldType" name="fieldType">
+            <option value="text">Text</option>
+            <option value="email">Email</option>
+            <option value="number">Number</option>
+            <option value="date">Date</option>
+        </select>
+        <br><p>&ensp;</p>
+        <label for="fieldLabel">Field Labels &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &ensp;: &ensp; &ensp; </label>
+        <input type="text" id="fieldLabel" name="fieldLabel" required>
+        <br><p>&ensp;</p>
+        <input type="submit" value="Generate Form">
+        <br><p>&ensp;</p>
+        <label>Reorder Fields&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;: </label>
+        <input type="text" placeholder="Drag and drop fields here" disabled>
+    </table>
+</body>
+</html>

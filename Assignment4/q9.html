@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Form</title>
+    <style>
+        body {
+            background-color: rgb(255, 239, 213);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Hotel Booking Form</h1>
+    <table>
+        <label for="name">Name &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;: &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; </label>
+        <input type="text" id="name" name="name" required>
+        <br><p>&ensp;</p>
+        <label for="contact">Contact Info &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;: &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; </label>
+        <input type="text" id="contact" name="contact" required>
+        <br><p>&ensp;</p>
+        <label for="checkin">Check-in Date &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;: &ensp;&ensp;&ensp;&ensp; &ensp; </label>
+        <input type="date" id="checkin" name="checkin" required>
+        <br><p>&ensp;</p>
+        <label for="checkout">Check-out Date &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;: &ensp;&ensp;&ensp;&ensp; &ensp; </label>
+        <input type="date" id="checkout" name="checkout" required>
+        <br><p>&ensp;</p>
+        <label for="guests">Number of Guests &ensp;&ensp; &ensp; &ensp;: &ensp; &ensp;&ensp;&ensp;&ensp; </label>
+        <input type="number" id="guests" name="guests" required>
+        <br><p>&ensp;</p>
+        <label for="room">Room Type &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &ensp;: &ensp;&ensp;&ensp;&ensp; &ensp; </label>
+        <select id="room" name="room">
+            <option value="single">Single</option>
+            <option value="double">Double</option>
+            <option value="suite">Suite</option>
+        </select>
+        <br><p>&ensp;</p>
+        <label>Additional Services &ensp;&ensp;&ensp;&ensp;: &ensp;&ensp;&ensp;&ensp;&ensp; </label>
+        <input type="checkbox" name="services" value="breakfast"> Breakfast
+        <input type="checkbox" name="services" value="pickup"> Airport Pickup
+        <br><p>&ensp;</p>
+        <input type="submit" value="Book Now">
+        <br><p>&ensp;</p>
+        <label>Total Cost&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;: &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</label>
+        <input type="text" placeholder="0.00" disabled>
+    </table>
+</body>
+</html>

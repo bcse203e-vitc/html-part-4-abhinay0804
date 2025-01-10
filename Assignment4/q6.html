@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Survey Form</title>
+    <style>
+        body {
+            background-color: rgb(214, 243, 233);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Health Survey Form</h1>
+    <table>
+        <label for="name">Name &ensp; &ensp; &ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &ensp; &ensp;&ensp;&ensp; : &ensp;&ensp;&ensp;</label>
+        <input type="text" id="name" name="name" required><br>
+        <p>&ensp;</p>
+        <label for="age">Age &ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; :&ensp;&ensp;&ensp;</label>
+        <input type="number" id="age" name="age" required><br>
+        <p>&ensp;</p>
+        <label for="gender">Gender &ensp; &ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; : &ensp;</label>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female
+        <input type="radio" name="gender" value="other">Other<br>
+        <p>&ensp;</p>
+        <label for="height">Height (cm) &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;&ensp;&ensp;&ensp;&ensp;: &ensp;&ensp;</label>
+        <input type="number" id="height" name="height" required><br>
+        <p>&ensp;</p>
+        <label for="weight">Weight (kg) &ensp;&ensp;&ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;:&ensp;&ensp;&ensp;</label>
+        <input type="number" id="weight" name="weight" required><br>
+        <p>&ensp;</p>
+        <label for="lifestyle">Lifestyle Questions &ensp;&ensp;&ensp;&ensp;&ensp; &ensp;: &ensp;&ensp;</label>
+        <input type="checkbox" id="lifestyle" name="lifestyle" value="diet">Diet
+        <input type="checkbox" id="lifestyle" name="lifestyle" value="exercise">Exercise
+        <input type="checkbox" id="lifestyle" name="lifestyle" value="sleep">Sleep<br>
+        <p>&ensp;</p>
+        <label for="preferences">Diet Preferences &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; :&ensp;&ensp;&ensp;</label>
+        <select id="preferences" name="preferences">
+            <option value="veg">Vegetarian</option>
+            <option value="non-veg">Non-Vegetarian</option>
+            <option value="vegan">Vegan</option>
+        </select><br>
+        <p>&ensp;</p>
+        <label for="activity">Activity Level &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; :&ensp;&ensp;&ensp;</label>
+        <select id="activity" name="activity">
+            <option value="sedentary">Sedentary</option>
+            <option value="moderate">Moderate</option>
+            <option value="active">Active</option>
+        </select><br>
+        <p>&ensp;</p>
+        <textarea id="health" name="health" rows="5" cols="50" placeholder="Provide additional health concerns here..."></textarea><br>
+        <p>&ensp;</p>
+        <input type="submit" value="Submit">
+    </table>
+</body>
+</html>
